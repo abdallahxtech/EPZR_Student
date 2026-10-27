@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>EPZR QR Screen</title><style>@font-face{font-family:BS;font-weight:900;src:url(/fonts/big-shoulders-display-latin-900-normal.woff2)}@font-face{font-family:BS;font-weight:700;src:url(/fonts/big-shoulders-display-latin-700-normal.woff2)}@font-face{font-family:FT;font-weight:500;src:url(/fonts/figtree-latin-500-normal.woff2)}@font-face{font-family:FT;font-weight:700;src:url(/fonts/figtree-latin-700-normal.woff2)}html{background:#16261d}
+
+
+
+*{margin:0;box-sizing:border-box}
+body{width:1920px;height:1080px;font-family:FT,sans-serif;background:#16261d url(/img/s14.jpg) left center/auto 100% no-repeat;display:grid;grid-template-columns:1fr 1100px;color:#fff;overflow:hidden}
+.r{background:#16261d;padding:80px 90px;display:grid;grid-template-columns:1fr 470px;gap:60px;align-items:center;position:relative}
+.r::before{content:"";position:absolute;left:-200px;top:0;bottom:0;width:200px;background:linear-gradient(90deg,rgba(22,38,29,0),#16261d)}
+.logo{width:300px;background:#fff;padding:14px 18px;border-radius:16px}
+h1{font-family:BS;font-weight:900;font-size:120px;line-height:.88;text-transform:uppercase;margin-top:44px}
+h1 span{color:#ff4f93}
+p{font-size:30px;line-height:1.35;margin-top:28px;color:#d6e2d9}
+.tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.tags span{font-size:22px;font-weight:700;padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.1)}
+.qr{background:#fff;border-radius:28px;padding:16px;border:8px solid #e30566}
+.qr svg{width:100%;height:auto;display:block}
+.cap{font-family:BS;font-weight:900;font-size:56px;text-transform:uppercase;text-align:center;margin-top:20px;color:#ff4f93}
+</style></head><body><div></div>
+<div class="r"><div><img class="logo" src="/img/logo.png"><h1>Join the<br><span>wild</span> side</h1>
+<p>Volunteering, internships, vacancies, training and joint research at Emirates Park Zoo &amp; Resort.</p>
+<div class="tags"><span>Animal welfare</span><span>Conservation</span><span>Research</span><span>Vet clinic</span></div></div>
+<div><div class="qr">{{QR}}</div><div class="cap">Scan to join us</div><div style="text-align:center;font-size:24px;color:#b9c7bd;margin-top:6px">{{URL}}</div></div></div>
+<script>function f(){var k=Math.min(innerWidth/1920,innerHeight/1080);document.body.style.transform="scale("+k+")";document.body.style.transformOrigin="0 0";}addEventListener("resize",f);f();</script></body></html>

@@ -1,0 +1,19 @@
+{
+  "name": "epzr-student-connect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EPZR Student Connect - landing page, application form (emails career@emiratespark.ae) and self-generating QR code",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "busboy": "1.6.0",
+    "express": "4.22.3",
+    "nodemailer": "10.0.16",
+    "qrcode": "1.5.4"
+  }
+}

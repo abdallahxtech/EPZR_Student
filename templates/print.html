@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><title>EPZR QR Table Card (A5)</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>@font-face{font-family:BS;font-weight:900;src:url(/fonts/big-shoulders-display-latin-900-normal.woff2)}@font-face{font-family:BS;font-weight:700;src:url(/fonts/big-shoulders-display-latin-700-normal.woff2)}@font-face{font-family:FT;font-weight:500;src:url(/fonts/figtree-latin-500-normal.woff2)}@font-face{font-family:FT;font-weight:700;src:url(/fonts/figtree-latin-700-normal.woff2)}
+
+
+
+
+@page{size:148mm 210mm;margin:0}
+*{box-sizing:border-box;margin:0}
+html,body{width:148mm;height:210mm}
+body{font-family:FT,sans-serif;color:#16261d;background:#fff;display:flex;flex-direction:column}
+.top{height:66mm;background:url(/img/s01.jpg) center 35%/cover;position:relative}
+.top::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(10,20,14,.75))}
+.logo{position:absolute;left:8mm;top:7mm;width:36mm;background:#fff;padding:2mm 2.4mm;border-radius:2.5mm;z-index:2}
+.top h1{position:absolute;left:8mm;bottom:5mm;z-index:2;font-family:BS;font-weight:900;color:#fff;font-size:15mm;line-height:.9;text-transform:uppercase}
+.top h1 span{color:#ff4f93}
+.mid{flex:1;display:grid;grid-template-columns:62mm 1fr;gap:6mm;padding:7mm 8mm 0;align-items:center}
+.qr{width:64mm;border:1mm solid #e30566;border-radius:4mm;padding:1.5mm;background:#fff}
+.qr svg{width:100%;height:auto;display:block}
+.scan{font-family:BS;font-weight:900;font-size:9mm;line-height:.95;text-transform:uppercase;color:#e30566}
+.mid p{font-size:3.4mm;line-height:1.4;margin-top:3mm}
+.mid ul{margin:3mm 0 0;padding-left:4mm;font-size:3.2mm;line-height:1.5}
+.bot{display:grid;grid-template-columns:1fr 1fr;gap:5mm;padding:6mm 8mm 6mm;font-size:2.95mm;line-height:1.45}
+.bot b{display:block;font-family:BS;font-weight:700;font-size:4.2mm;text-transform:uppercase;letter-spacing:.02em;color:#1f5c3d;margin-bottom:1mm;line-height:1}
+.tip{display:none}@media screen{html{background:#555}html,body{height:auto}body{margin:56px auto 30px;box-shadow:0 10px 40px rgba(0,0,0,.4);min-height:210mm}.tip{display:block;position:fixed;top:0;left:0;right:0;background:#e30566;color:#fff;font:500 14px FT,sans-serif;padding:12px 16px;z-index:9;text-align:center}}.foot{margin-top:auto;background:#16261d;color:#fff;font-size:2.8mm;padding:3mm 8mm;display:flex;justify-content:space-between}
+</style></head><body><div class="tip">Print this card: press <b>Ctrl+P</b> (Mac: Cmd+P) &rarr; Paper <b>A5</b> &rarr; Margins <b>None</b> &rarr; turn on <b>Background graphics</b>. Or choose Save as PDF.</div>
+<div class="top"><img class="logo" src="/img/logo.png"><h1>Join the <span>wild</span> side</h1></div>
+<div class="mid">
+ <div class="qr">{{QR}}</div>
+ <div><div class="scan">Scan me</div>
+ <p>Our portfolio and who to contact, on your phone.</p>
+ <ul><li>Volunteering</li><li>Internships</li><li>Current vacancies</li><li>Training &amp; joint research</li></ul></div>
+</div>
+<div class="bot">
+ <div><b>Volunteer · Intern · Apply</b>career@emiratespark.ae<br>02 501 0058<br>+971 52 803 8118<br>+971 54 252 7734</div>
+ <div><b>Education &amp; Research</b>kukuh@emiratespark.ae<br>+971 50 618 1349<br>Kukuh Hadi Wiyono, Conservation &amp; Research Officer</div>
+</div>
+<div class="foot"><span>Emirates Park Zoo &amp; Resort · Al Bahyah, Abu Dhabi</span><span>{{URL}}</span></div>
+</body></html>
